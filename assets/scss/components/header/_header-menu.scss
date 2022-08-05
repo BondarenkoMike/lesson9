@@ -6,11 +6,13 @@
   top: 0;
   right: 0;
   left: 0;
+  font-weight: 400;
 
   &__container {
     display: flex;
     align-items: center;
     @extend %container;
     gap: $gap;
+    // background-color: blue;   
   }
 }
