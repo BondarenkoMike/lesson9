@@ -1,4 +1,5 @@
-// @use "../../mixins/mixins";
+@use "../../presets" as *;
+@use "../../mixins" as *;
 
 .header-content {
   position: relative;
