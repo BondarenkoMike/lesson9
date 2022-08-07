@@ -1,5 +1,6 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+// @use "../../mixins/extends" as *;
 
 .header-content {
   position: relative;
@@ -7,7 +8,7 @@
   top: 0;
 
   &__container {
-    @extend %container;
+    @extend %container
   }
 
   &__actions {

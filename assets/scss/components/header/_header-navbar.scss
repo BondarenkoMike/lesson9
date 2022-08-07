@@ -13,7 +13,7 @@
     display: grid;
     justify-content: end;
     grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
-    @include unlist;
+    @include unlist(0 -20px 0 0);
     margin: -18px -20px -20px -18px;
   }
 
