@@ -11,6 +11,15 @@
     position: relative;
     z-index: 1;
     margin: 0;
+
+    @include md-min {
+      font-size: 1.25rem;
+    }
+
+    @include md {
+      font-size: 1.125rem;
+    }
+
     @include abs-position;
   }
 
@@ -43,6 +52,9 @@
 
     .skill-item__image {
       transform: scale(1.1);
+      background-position: center;
+      background-size: cover;
+      ;
     }
 
     .skill-item__link {

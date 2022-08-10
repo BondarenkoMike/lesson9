@@ -1,4 +1,6 @@
  @use "../presets" as *;
+ @use "../mixins" as *;
+
 
  *,
  *::before,
@@ -31,6 +33,20 @@
    font-weight: 300;
 
    line-height: 1.2em;
+
+
+
+   @include lg-min {
+     font-size: 3.75rem;
+   }
+
+   @include lg-md {
+     font-size: 1.875rem;
+   }
+
+   @include md {
+     font-size: 1.875rem;
+   }
  }
 
  a {
@@ -38,20 +54,3 @@
 
    color: $color-light;
  }
-
-
- @mixin lg-min {
-   @media(min-width:$lg) {
-     @content;
-   }
- }
-
- // @mixin lg-md {
- //   @media() {
- //     @content;
- //   }
- // }
-
- // @media lg-md {
- //   font-size: 2.5rem;
- // }
